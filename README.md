@@ -1,28 +1,68 @@
 # Codex Glance
 
-Codex Glance is a small floating macOS window that keeps your Codex usage, reset credits, and token bucket in view.
+**Your Codex quota, always in sight.**
 
-It is free to download and use. No purchase or GitHub sign-in is required. You receive an official compiled application build, not a source-code license. Codex Glance is no longer licensed under MIT; its complete source code is not public.
+Codex can show your usage. Getting there takes too many clicks.
 
-## Download
+Codex Glance keeps the useful numbers on screen in one small floating pill.
 
-[Download the latest release](https://github.com/okichen168/codex-glance/releases/latest)
+![Codex Glance](docs/images/hero.png)
 
-- [macOS Apple Silicon DMG](https://github.com/okichen168/codex-glance/releases/latest/download/Codex-Glance-macOS-arm64.dmg)
-- [macOS Apple Silicon ZIP](https://github.com/okichen168/codex-glance/releases/latest/download/Codex-Glance-macOS-arm64.zip) — alternate archive
+[Download the latest macOS release](https://github.com/okichen168/codex-glance/releases/latest) · [DMG](https://github.com/okichen168/codex-glance/releases/latest/download/Codex-Glance-macOS-arm64.dmg) · [ZIP](https://github.com/okichen168/codex-glance/releases/latest/download/Codex-Glance-macOS-arm64.zip)
+
+Free to download and use. Codex Glance is the official compiled macOS application distributed from this repository; its source code is not publicly distributed.
+
+## At a glance
+
+```text
+⚡93%   D:1   🎫2   T:16.4M
+```
+
+- ⚡ Remaining quota
+- D Current cycle day
+- 🎫 Available reset credits
+- T Latest valid token bucket
+
+Hover for details. Click the ticket to see each expiry. Drag the pill wherever it fits.
+
+![Usage and appearance](docs/images/overview.png)
+
+## Why
+
+No dashboard to keep reopening. No reset credit quietly expiring. No Dock clutter.
+
+The numbers you check, already there.
+
+## Themes
+
+Glass, metal, dark, light, and soft color themes. Pick one from the same compact panel.
+
+![Appearance themes](docs/images/appearance-themes.png)
+
+## Fast when Codex is slow
+
+The last good snapshot appears first. Codex Glance refreshes quietly in the background and keeps old data visible when the local service is temporarily unavailable.
+
+Use the refresh icon in the Usage panel for an immediate update.
+
+## Privacy
+
+Codex Glance uses the local official `codex app-server`. It reads only usage information needed to show your quota and does not read cookies, access tokens, chats, or source code. Nothing is uploaded. See [PRIVACY.md](PRIVACY.md).
 
 ## Requirements and installation
 
-- macOS 11 or later on Apple Silicon. An Intel build is not in this initial release.
-- The official Codex CLI or Codex desktop app must already be installed and signed in. Codex Glance reads usage from its local `codex app-server`; it does not replace Codex.
-- Open the DMG and drag **Codex Glance** to Applications. The ZIP contains the same app as a fallback.
+- macOS 11 or later on Apple Silicon. An Intel build is not included in this release.
+- The official Codex CLI or Codex desktop app must already be installed and signed in.
+- Download the [DMG](https://github.com/okichen168/codex-glance/releases/latest/download/Codex-Glance-macOS-arm64.dmg), open it, and drag **Codex Glance** to Applications. The [ZIP](https://github.com/okichen168/codex-glance/releases/latest/download/Codex-Glance-macOS-arm64.zip) contains the same app as an alternate archive.
 
-The first release is not commercially code-signed or notarized. macOS may show a Gatekeeper warning. Download only from this official release page, verify the SHA-256 value in `SHA256SUMS.txt`, then use Finder to Control-click the app, choose **Open**, and confirm **Open**. No administrator access is required.
+The first release is not commercially code-signed or notarized. macOS may show a Gatekeeper warning. Download only from this official release page, verify the value in `SHA256SUMS.txt`, then Control-click the app in Finder, choose **Open**, and confirm **Open**.
 
-To remove the app, quit Codex Glance and move it from Applications to Trash.
+## Source and licensing
 
-## What is public
+This public repository contains the official compiled application, release checksums, product documentation, and public screenshots only. It does not publish source code, build configuration, tests, or development scripts.
 
-This repository intentionally contains documentation, screenshots, icons, release checksums, and official binary assets only. It does not upload or publish the private source code. Third-party components continue to be governed by their own licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Codex Glance is not licensed under MIT. See [LICENSE](LICENSE), [END_USER_LICENSE.md](END_USER_LICENSE.md), [SECURITY.md](SECURITY.md), and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the applicable terms and notices.
+
+## Unofficial disclaimer
 
 Codex Glance is unofficial and is not affiliated with OpenAI.

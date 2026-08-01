@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.2
+
+- Prevented duplicate Codex Glance instances.
+- Improved Finder launch support for the Codex bundled with ChatGPT or Codex Desktop.
+- Added local Points and US$ Balance information to the Usage panel.
+- Added a clear in-panel Quit control with complete app-server cleanup.
+- Added a new macOS application icon.
+- Improved Usage panel closing and refresh behavior.
+
 ## v1.0.1
 
 - Added complete bundled third-party license notices.
